@@ -2,6 +2,7 @@
 // 책 40P firebase 임포트 시 "firebase/app" 으로만 불러오는데
 // firebase 버전 변경으로 "firebase/compat/app" 으로 불러와야 오류나지 않음
 import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -12,4 +13,6 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID
   };
 
-export default firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
+
+export const authService = firebase.auth();

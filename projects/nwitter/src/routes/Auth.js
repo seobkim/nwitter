@@ -1,4 +1,4 @@
-import { authService } from "fbase";
+import { authService, firebaseInstance } from "fbase";
 import { useState } from "react";
 
 const Auth = () => {
@@ -43,6 +43,12 @@ const Auth = () => {
     //소셜 로그인 이벤트
     const onSocialClick = (event) => {
         console.log(event.target.name);
+        const {
+            target : {name},
+        } = event ;
+        let provider;
+        if(name == google){
+        }
     }
 
     return(

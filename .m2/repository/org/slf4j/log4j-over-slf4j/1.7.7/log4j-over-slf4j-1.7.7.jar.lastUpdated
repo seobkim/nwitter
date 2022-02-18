@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Jan 11 12:21:14 KST 2022
-https\://repo.maven.apache.org/maven2/.lastUpdated=1641871274121
-http\://www.egovframe.go.kr/maven/.error=
-http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.slf4j\:log4j-over-slf4j\:jar\:1.7.7 from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.7/log4j-over-slf4j-1.7.7.jar. Error code 501, HTTPS Required
-@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871266215
-http\://www.egovframe.go.kr/maven/.lastUpdated=1641871267986

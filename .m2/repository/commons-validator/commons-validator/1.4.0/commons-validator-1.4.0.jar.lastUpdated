@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Jan 11 12:21:14 KST 2022
-https\://repo.maven.apache.org/maven2/.lastUpdated=1641871274102
-http\://www.egovframe.go.kr/maven/.error=
-http\://repo1.maven.org/maven2/.error=Could not transfer artifact commons-validator\:commons-validator\:jar\:1.4.0 from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/commons-validator/commons-validator/1.4.0/commons-validator-1.4.0.jar. Error code 501, HTTPS Required
-@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871266210
-http\://www.egovframe.go.kr/maven/.lastUpdated=1641871267958

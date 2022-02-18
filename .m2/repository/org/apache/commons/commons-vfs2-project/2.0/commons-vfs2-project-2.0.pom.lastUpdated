@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Jan 11 12:20:38 KST 2022
-https\://repo.maven.apache.org/maven2/.lastUpdated=1641871238412
-http\://www.egovframe.go.kr/maven/.error=
-http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.commons\:commons-vfs2-project\:pom\:2.0 from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/commons/commons-vfs2-project/2.0/commons-vfs2-project-2.0.pom. Error code 501, HTTPS Required
-@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871238085
-http\://www.egovframe.go.kr/maven/.lastUpdated=1641871238119

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 11 12:21:01 KST 2022
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641871261470
+http\://www.egovframe.go.kr/maven/.error=
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact com.fasterxml\:oss-parent\:pom\:28 from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/com/fasterxml/oss-parent/28/oss-parent-28.pom. Error code 501, HTTPS Required
+@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871261153
+http\://www.egovframe.go.kr/maven/.lastUpdated=1641871261181

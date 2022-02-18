@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 11 12:20:26 KST 2022
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641871226094
+http\://www.egovframe.go.kr/maven/.error=
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.springframework\:spring-web\:pom\:3.2.9.RELEASE from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/springframework/spring-web/3.2.9.RELEASE/spring-web-3.2.9.RELEASE.pom. Error code 501, HTTPS Required
+@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871225793
+http\://www.egovframe.go.kr/maven/.lastUpdated=1641871225822

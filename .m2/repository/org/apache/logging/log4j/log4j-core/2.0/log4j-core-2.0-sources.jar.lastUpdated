@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jan 11 12:22:55 KST 2022
+https\://repo.maven.apache.org/maven2/.lastUpdated=1641871375805
+http\://www.egovframe.go.kr/maven/.error=
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.logging.log4j\:log4j-core\:jar\:sources\:2.0 from/to mvn2 (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0/log4j-core-2.0-sources.jar. Error code 501, HTTPS Required
+@default-mvn2-http\://repo1.maven.org/maven2/.lastUpdated=1641871374025
+http\://www.egovframe.go.kr/maven/.lastUpdated=1641871374193

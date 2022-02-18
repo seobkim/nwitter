@@ -18,7 +18,6 @@ const Auth = () => {
             setPassword(value);
         }
     };
-    console.log(email+" : "+password);
 
     const onSubmit = async (event) =>{
         try{
@@ -38,7 +37,13 @@ const Auth = () => {
         }
     };
 
+    //토글 이벤트
     const toggleAccount = () => setNewAccount((prev) => !prev);
+
+    //소셜 로그인 이벤트
+    const onSocialClick = (event) => {
+        console.log(event.target.name);
+    }
 
     return(
         <div>

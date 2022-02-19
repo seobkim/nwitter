@@ -4,3 +4,13 @@ CRA(Create React App)으로 만든 리액트 프로젝트에는 환경 변수를
 환경 변수를 정의하려면 변수 맨앞에 REACT_APP_ 을 붙어야함 규칙!
 환경 변수는 공개되면 안되기때문에 코드 공유 시 파일이 업로드 되지않도록 git ignore 파일에 .env 파일 입력
 
+주의 사항
+프로젝트 진행 시 프로젝트 경로와 같은 곳에 .git 파일이 중복되지않도록!!!!
+
+
+// 상수 선언 방법 공부할것.
+const onChange = (event) =>{
+        const{
+            target : {value},
+        } = event;
+    }

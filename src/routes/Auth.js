@@ -41,14 +41,19 @@ const Auth = () => {
     const toggleAccount = () => setNewAccount((prev) => !prev);
 
     //소셜 로그인 이벤트
-    const onSocialClick = (event) => {
+    const onSocialClick = async (event) => {
         console.log(event.target.name);
         const {
             target : {name},
         } = event ;
         let provider;
-        if(name == google){
+        if(name === "google"){
+            provider = new firebaseInstance.auth.GoogleAuthProvider();
+        }else if(name === "github"){
+            provider = new firebaseInstance.auth.GithubAuthProvider();
         }
+        const data = await authService.signInWithPopup(provider);
+        console.log(data);
     }
 
     return(

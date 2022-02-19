@@ -6,6 +6,7 @@ const Nweet =( {nweetObj, isOwner} ) =>{
     const [editing, setEditing] = useState(false);
     const [newNweet, setNewNweet] = useState(nweetObj.text);
 
+    // 글 삭제 버튼(Delete Nweet) 클릭 EVent
     const onDeleteClick = async(dd) =>{
         console.log(dd);
         const ok = window.confirm("글을 삭제하시겠습니까?");
@@ -19,7 +20,7 @@ const Nweet =( {nweetObj, isOwner} ) =>{
         }
     };
 
-    //글 수정 버튼(Edit Nweet)버튼 클릭 Event
+    //글 수정 버튼(Edit Nweet) 클릭 Event
     const toogleEditting = () => setEditing((prev) => !prev);
 
     //글 수정 시(input box 글 변경) Event

@@ -1,6 +1,8 @@
-import { dbService } from "fbase";
+import { dbService, storageService } from "fbase";
 import { useEffect, useState } from "react";
 import Nweet from "components/Nweet";
+import { v4 as uuidv4 } from "uuid";
+
 const Home = ({userObj}) =>{
 
     const[nweet, setNweet] = useState("");
@@ -46,6 +48,12 @@ const Home = ({userObj}) =>{
         });
         setNweet("");
         */
+
+        const attachmentRef = storageService
+            .ref()
+            .child('${userObj.uid}/${uuidv4()}');
+        const response = await attachmentRef.putString(attachment, "data_url");
+        console.log(response);
     };
     
     // 글 작성 칸 변경되었을시 Event

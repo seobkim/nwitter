@@ -53,6 +53,9 @@ const Nweet =( {nweetObj, isOwner} ) =>{
             ):(
                 <>
                     <h4>{nweetObj.text}</h4>
+                    {nweetObj.attachmentUrl && (
+                        <img src = {nweetObj.attachmentUrl} width= "50px" height= "50px"/>
+                    )}
                     {isOwner && (
                         <>
                             {/* jsx에서 onClick 이벤트에 새로운 함수의 파라미터 전달시 방법*/

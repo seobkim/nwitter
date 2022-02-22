@@ -10,6 +10,7 @@ function App() {
   useEffect(()=>{
     authService.onAuthStateChanged((user) => {
       if (user){
+        console.log(user);
         //setIsLoggedIn(user);
         setUserObj({
           uid: user.uid,
@@ -33,7 +34,7 @@ function App() {
       updateProfile: (args) => user.updateProfile(args),
     });
   };
-  
+
   return(
     <>
     {init ? (<AppRouter refreshUser= {refreshUser} isLoggedIn={Boolean(userObj)} userObj = {userObj}/>): "initializing..."}

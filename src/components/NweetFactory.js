@@ -72,7 +72,10 @@ const NweetFactory= ({userObj}) =>{
             }= finishedEvent;
             setAttachment(result);
         };
-        reader.readAsDataURL(theFile);
+        
+        if(Boolean(theFile)){
+            reader.readAsDataURL(theFile);
+        }
     };
 
     //파일 선택 취소 Event

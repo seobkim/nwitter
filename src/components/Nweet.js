@@ -1,7 +1,7 @@
 import { dbService, storageService } from "fbase";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash, faPencilaAlt } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 const Nweet =( {nweetObj, isOwner} ) =>{
 
     const [editing, setEditing] = useState(false);
@@ -57,16 +57,20 @@ const Nweet =( {nweetObj, isOwner} ) =>{
                         <img src = {nweetObj.attachmentUrl} width= "50px" height= "50px"/>
                     )}
                     {isOwner && (
-                        <>
+                        <div className="nweet__actions">
                             {/* jsx에서 onClick 이벤트에 새로운 함수의 파라미터 전달시 방법*/
                             /*
                                 옳은 방법 : <button onClick={ (e) => onDeleteClick("dd") }>Delete Nweet</button>
                                 틀린 방법 : <button onClick={onDeleteClick("dd") }>Delete Nweet</button>
                             */
                             }
-                            <button onClick = {onDeleteClick}>Delete Nweet</button>
-                            <button onClick = {toogleEditting}>Edit Nweet</button>    
-                        </>
+                            <span onClick = {onDeleteClick}>
+                                <FontAwesomeIcon icon= {faTrash}></FontAwesomeIcon>
+                            </span>
+                            <span onClick = {toogleEditting}>
+                                <FontAwesomeIcon icon={faPencilAlt}></FontAwesomeIcon>
+                            </span>    
+                        </div>
                     )}
                 </>
             )}

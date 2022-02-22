@@ -1,6 +1,7 @@
 import { dbService, storageService } from "fbase";
 import { useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faPencilaAlt } from "@fortawesome/free-solid-svg-icons";
 const Nweet =( {nweetObj, isOwner} ) =>{
 
     const [editing, setEditing] = useState(false);
@@ -40,14 +41,14 @@ const Nweet =( {nweetObj, isOwner} ) =>{
     }
 
     return (
-        <div>
+        <div className="nweet">
             {editing ? (
                 <>
-                    <form onSubmit={onSubmit}>
-                        <input value = {newNweet} onChange={onChange} required></input>
-                        <input type = "submit" value = "Update Nweet"></input>
+                    <form onSubmit={onSubmit} className="container nweetEdit">
+                        <input value = {newNweet} onChange={onChange} required placeholder="Edit your nweet" autoFocus className="formInput"/>
+                        <input type = "submit" value = "Update Nweet" className="formBtn"/>
                     </form>
-                    <button onClick = {toogleEditting}>Cancel</button>
+                    <button onClick = {toogleEditting} className="formBtn cancelBtn">Cancel</button>
                 </>
             ):(
                 <>

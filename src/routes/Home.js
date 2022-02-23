@@ -49,7 +49,7 @@ const Home = ({userObj}) =>{
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Home;

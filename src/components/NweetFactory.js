@@ -37,7 +37,7 @@ const NweetFactory= ({userObj}) =>{
 
         const nweetObj = {
             text: nweet,
-            createAt: Date.now(),
+            createdAt: Date.now(),
             creatorId: userObj.uid,
             attachmentUrl,
         };
@@ -91,7 +91,7 @@ const NweetFactory= ({userObj}) =>{
                 <span>Add photo</span>
                 <FontAwesomeIcon icon= {faPlus}></FontAwesomeIcon>
             </label>
-            <input type ="file" accept="image/*" onChange={onFileChange}  style={{opacity:0,}}></input>
+            <input id ="attach-file" type ="file" accept="image/*" onChange={onFileChange}  style={{opacity:0,}}></input>
             {attachment &&(
                 <div className="factoryForm__attachment">
                     <img src={attachment} style={{backgroundImage: attachment,}}></img>

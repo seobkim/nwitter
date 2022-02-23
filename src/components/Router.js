@@ -11,6 +11,7 @@ const AppRouter=({refreshUser,isLoggedIn, userObj})=>{
             {/*Switch 사용하면 여러가지 Route중 하나만 렌더링 함*/}
             {isLoggedIn && <Navigation userObj={userObj}/>}
             <Switch>
+                <>
                 {isLoggedIn?(
                 <div style= {{maxWidth:890, width:"100%", margin:"0 auto", marginTop: 80, display:"flex", justifyContent: "center",}}>
                     <Route exact path ="/">
@@ -27,6 +28,7 @@ const AppRouter=({refreshUser,isLoggedIn, userObj})=>{
                 )}
                 { /* 리다이렉트 함수 */}
                 { /* <Redirect from = "*" to = "/"/> */}
+                </>
             </Switch>
         </Router>
     )

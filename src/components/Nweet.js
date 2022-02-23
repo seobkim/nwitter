@@ -2,6 +2,7 @@ import { dbService, storageService } from "fbase";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+
 const Nweet =( {nweetObj, isOwner} ) =>{
 
     const [editing, setEditing] = useState(false);
@@ -78,4 +79,4 @@ const Nweet =( {nweetObj, isOwner} ) =>{
     );
 };
 
-export default Nweet
+export default Nweet;
